@@ -1,9 +1,17 @@
 import React from "react";
+
+
 function IdCard(props) {
     const {lastName, firstName, gender, height, birth, picture} = props;
 
+    const idCardStyle = {
+        border: "1px solid black", // Add a black border
+        padding: "10px", // Add some padding for spacing
+        // Add any other desired styles
+      };
+
     return (
-        <div className = "id-cart">
+            <div style={idCardStyle}>
             <img src = {picture} alt ="Profile" />
             <div>
                 <strong> Last Name:</strong> {lastName}
@@ -19,7 +27,9 @@ function IdCard(props) {
             </div>
             <div>
                 <strong> Birth:</strong> {birth.toDateString()}
-            </div>            
+            </div>        
+
+                
             
         </div>
     );
