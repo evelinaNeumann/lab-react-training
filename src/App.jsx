@@ -2,6 +2,7 @@ import React from "react";
 import IdCard from "./components/IdCart"
 import Greetings from "./components/Greetings";
 import Random from "./components/Random";
+import BoxColor from "./components/BoxColor";
 
 function App () {
   return (
@@ -27,6 +28,9 @@ function App () {
 
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+
+        <BoxColor r={858} g={555} b={18} />
+        <BoxColor r={144} g={25} b={454} />
 
     </div>
   );
