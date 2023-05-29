@@ -3,6 +3,9 @@ import IdCard from "./components/IdCart"
 import Greetings from "./components/Greetings";
 import Random from "./components/Random";
 import BoxColor from "./components/BoxColor";
+import CreditCard from "./components/CreditCard";
+import Rating from "./components/Rating";
+import DriverCard from "./components/DriverCard";
 
 function App () {
   return (
@@ -31,6 +34,45 @@ function App () {
 
         <BoxColor r={858} g={555} b={18} />
         <BoxColor r={144} g={25} b={454} />
+
+        <CreditCard
+        type="Visa"
+        number="05448412579018845"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="BNP"
+        owner="Vanessa Mustermann"
+        bgColor="#11aa99"
+        color="white"
+      />
+
+      <CreditCard
+        type="Master Card"
+        number="4684121249010995"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="N26"
+        owner="Max Mustermann"
+        bgColor="#eeeeee"
+        color="#222222"
+      />
+
+<Rating>0</Rating>
+<Rating>1.49</Rating>
+<Rating>1.5</Rating>
+<Rating>3</Rating>
+<Rating>4</Rating>
+<Rating>5</Rating>
+
+<DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE",
+        }}
+      />
 
     </div>
   );
