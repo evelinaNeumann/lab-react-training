@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 function IdCard(props) {
     const {lastName, firstName, gender, height, birth, picture} = props;
 

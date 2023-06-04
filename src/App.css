@@ -2,3 +2,18 @@
   border: 1px solid black; /* Add a black border */
   padding: 10px;
 }
+.numbers-table {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4px; /* Adjust the width as needed */
+  height: 4px; /* Set the height equal to the width to create squares */
+  border: 1px solid black;
+  margin: 5px;
+}
